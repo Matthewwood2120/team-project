@@ -19,8 +19,8 @@ CREATE TABLE standings (
     SOL INT,
     L INT,
     points INT,
-    gf INT,
-    ga INT,
+    goals_for INT,
+    goals_against INT,
     `points per game` DECIMAL(10,4),
     `gf/ga` DECIMAL(10,4)
 );
@@ -28,8 +28,8 @@ CREATE TABLE standings (
 CREATE TABLE stats (
     player VARCHAR(50),
     league VARCHAR(50),
-    gp INT,
-    gs INT,
+    games_played INT,
+    games_started INT,
     `min` INT,
     goals INT,
     assists INT,
