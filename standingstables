@@ -1,0 +1,16 @@
+USE standings; 
+
+CREATE TABLE standings (
+    team VARCHAR(50),
+    GP INT,
+    W INT,
+    SOW INT,
+    `T` INT,
+    SOL INT,
+    L INT,
+    points INT,
+    gf INT,
+    ga INT,
+    `points per game` DECIMAL(10,4),
+    `gf/ga` DECIMAL(10,4)
+);

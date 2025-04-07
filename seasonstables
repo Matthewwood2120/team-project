@@ -1,0 +1,9 @@
+USE seasons;
+CREATE TABLE seasons (
+    season YEAR,
+    champion VARCHAR(100),
+    golden_boot VARCHAR(100),
+    games INT,
+    gpg VARCHAR(50),
+    att INT
+);
