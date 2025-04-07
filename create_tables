@@ -1,0 +1,34 @@
+CREATE TABLE seasons (
+    season YEAR,
+    champion VARCHAR(100),
+    golden_boot VARCHAR(100),
+    games INT,
+    gpg VARCHAR(50),
+    att INT
+);
+
+CREATE TABLE standings (
+    team VARCHAR(50),
+    GP INT,
+    W INT,
+    SOW INT,
+    `T` INT,
+    SOL INT,
+    L INT,
+    points INT,
+    gf INT,
+    ga INT,
+    `points per game` DECIMAL(10,4),
+    `gf/ga` DECIMAL(10,4)
+);
+
+CREATE TABLE stats (
+    player VARCHAR(50),
+    league VARCHAR(50),
+    gp INT,
+    gs INT,
+    `min` INT,
+    goals INT,
+    assists INT,
+    shots INT
+);

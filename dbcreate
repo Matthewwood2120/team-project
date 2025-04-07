@@ -1,7 +1,1 @@
-CREATE DATABASE seasons;
-
-CREATE DATABASE stats;
-
-CREATE DATABASE standings;
-
-CREATE DATABASE games;
+CREATE DATABASE soccer;
