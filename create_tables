@@ -1,5 +1,8 @@
+
+DROP TABLE seasons;
+
 CREATE TABLE seasons (
-    season YEAR,
+    season YEAR PRIMARY KEY NOT NULL AUTO INCREMENT,
     champion VARCHAR(100),
     golden_boot VARCHAR(100),
     games INT,
