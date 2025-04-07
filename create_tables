@@ -2,7 +2,7 @@
 DROP TABLE seasons;
 
 CREATE TABLE seasons (
-    season YEAR PRIMARY KEY NOT NULL AUTO INCREMENT,
+    season YEAR PRIMARY KEY NOT NULL AUTO_INCREMENT,
     champion VARCHAR(100),
     golden_boot VARCHAR(100),
     games INT,
@@ -34,4 +34,13 @@ CREATE TABLE stats (
     goals INT,
     assists INT,
     shots INT
+);
+
+CREATE TABLE games (
+    `date` DATETIME,
+    `year` YEAR,
+    team VARCHAR(150),
+    versus VARCHAR(50),
+    opposing_team VARCHAR(150),
+    stadium VARCHAR(100)
 );
