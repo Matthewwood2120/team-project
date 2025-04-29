@@ -44,3 +44,7 @@ CREATE TABLE games (
     opposing_team VARCHAR(150),
     stadium VARCHAR(100)
 );
+#TRUNCATE TABLE games;
+
+ALTER TABLE games ADD attendance INT NULL, ADD yellowcards INT NULL;
+
