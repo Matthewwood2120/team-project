@@ -1,4 +1,3 @@
-
 DROP TABLE seasons;
 
 CREATE TABLE seasons (
