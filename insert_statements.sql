@@ -23,7 +23,8 @@ INSERT INTO seasons (season, champion, golden_boot, games, gpg, att) VALUES
 
 
 #STATS
-INSERT INTO stats (player, league, games_played, games_started, `min`, goals, assists, shots) VALUES
+TRUNCATE TABLE stats;
+/* INSERT INTO stats (player, team, games_played, games_started, `min`, goals, assists, shots) VALUES
 ('Kevin Hartman', 'MLS', 416, 411, 37260, 0, 3, 0),
 ('Steve Ralston', 'MLS', 378, 372, 33142, 76, 135, 412),
 ('Jeff Cunningham', 'MLS', 365, 233, 22751, 134, 70, 772),
@@ -49,7 +50,7 @@ INSERT INTO stats (player, league, games_played, games_started, `min`, goals, as
 ('Landon Donovan', 'MLS', 303, 283, 25945, 134, 117, 639),
 ('Brian Carroll', 'MLS', 301, 284, 25395, 8, 16, 124),
 ('Davy Arnaud', 'MLS', 297, 265, 23921, 48, 43, 505); 
-INSERT INTO stats (player, league, games_played, games_started, `min`, goals, assists, shots) VALUES
+INSERT INTO stats (player, team, games_played, games_started, `min`, goals, assists, shots) VALUES
 ('Amobi Okugo', 'MLS', 32, 32, 2879, 3, 3, 25),
 ('Austin Berry', 'MLS', 34, 34, 3060, 1, 2, 14),
 ('Brian Carroll', 'MLS', 33, 33, 2969, 2, 1, 16),
@@ -75,7 +76,7 @@ INSERT INTO stats (player, league, games_played, games_started, `min`, goals, as
 ('Tally Hall', 'MLS', 34, 34, 3060, 0, 0, 0),
 ('Troy Perkins', 'MLS', 33, 33, 2970, 0, 0, 0),
 ('Zac MacMath', 'MLS', 34, 34, 3060, 0, 0, 0);
-INSERT INTO stats (player, league, games_played, games_started, min, goals, assists, shots) VALUES
+INSERT INTO stats (player, team, games_played, games_started, `min`, goals, assists, shots) VALUES
 ('Drew Moor', 'MLS', 34, 34, 3060, 3, 2, 17),
 ('Jimmy Nielsen', 'MLS', 34, 34, 3060, 0, 0, 0),
 ('Eddie Gaven', 'MLS', 34, 34, 2990, 9, 2, 55),
@@ -101,7 +102,7 @@ INSERT INTO stats (player, league, games_played, games_started, min, goals, assi
 ('Chris Wondolowski', 'MLS', 32, 31, 2813, 27, 7, 127),
 ('Perry Kitchen', 'MLS', 32, 32, 2804, 0, 1, 12),
 ('Michael Farfan', 'MLS', 32, 31, 2802, 1, 5, 54);
-INSERT INTO stats (player, league, games_played, games_started, min, goals, assists, shots) VALUES
+INSERT INTO stats (player, team, games_played, games_started, `min`, goals, assists, shots) VALUES
 ('Tally Hall', 'MLS', 34, 34, 3060, 0, 1, 0),
 ('Sébastien Le Toux', 'MLS', 34, 34, 3060, 11, 9, 81),
 ('Matt Pickens', 'MLS', 34, 34, 3060, 0, 0, 0),
@@ -126,7 +127,112 @@ INSERT INTO stats (player, league, games_played, games_started, min, goals, assi
 ('Dan Kennedy', 'MLS', 32, 32, 2880, 0, 0, 0),
 ('Todd Dunivant', 'MLS', 32, 32, 2880, 0, 4, 12),
 ('Shalrie Joseph', 'MLS', 32, 32, 2860, 8, 1, 52),
-('Chad Marshall', 'MLS', 32, 32, 2835, 0, 1, 15);
+('Chad Marshall', 'MLS', 32, 32, 2835, 0, 1, 15); */
+
+INSERT INTO stats (player, team, games_played, games_started, min, goals, assists, shots) VALUES
+('Jalil Anibaba', 'Chicago Fire', 34, 34, 3060, 1, 3, 16),
+('Zac MacMath', 'Philadelphia Union', 34, 34, 3060, 0, 0, 0),
+('Luis Robles', 'New York Red Bulls', 34, 34, 3060, 0, 1, 0),
+('José Gonçalves', 'New England Revolution', 34, 34, 3060, 2, 0, 9),
+('Tally Hall', 'Houston Dynamo', 34, 34, 3060, 0, 0, 0),
+('Austin Berry', 'Chicago Fire', 34, 34, 3060, 1, 2, 14),
+('Jimmy Nielsen', 'Sporting Kansas City', 34, 34, 3060, 0, 0, 0),
+('Sam Cronin', 'San Jose Earthquakes', 34, 34, 2971, 2, 4, 28),
+('Jon Busch', 'San Jose Earthquakes', 33, 33, 2970, 0, 0, 0),
+('Troy Perkins', 'Montreal Impact', 33, 33, 2970, 0, 0, 0),
+('Joe Bendik', 'Toronto FC', 33, 33, 2970, 0, 0, 0),
+('Brian Carroll', 'Philadelphia Union', 33, 33, 2969, 2, 1, 16),
+('Michael Harrington', 'Portland Timbers', 33, 33, 2951, 0, 1, 3),
+('Kofi Sarkodie', 'Houston Dynamo', 33, 33, 2948, 0, 4, 12),
+('Marcelo Sarvas', 'LA Galaxy', 33, 33, 2897, 4, 6, 53),
+('Donovan Ricketts', 'Portland Timbers', 32, 32, 2880, 0, 0, 0),
+('Amobi Okugo', 'Philadelphia Union', 32, 32, 2879, 3, 3, 25),
+('Hassoun Camara', 'Montreal Impact', 32, 32, 2874, 3, 3, 20),
+('Clint Irwin', 'Colorado Rapids', 32, 31, 2873, 0, 0, 0),
+('Sheanon Williams', 'Philadelphia Union', 32, 32, 2867, 2, 8, 14),
+('Markus Holgersson', 'New York Red Bulls', 32, 32, 2866, 0, 1, 8),
+('Gonzalo Segares', 'Chicago Fire', 32, 32, 2855, 0, 1, 12),
+('Dominic Oduro', 'Columbus Crew', 34, 34, 2854, 13, 4, 92),
+('Darlington Nagbe', 'Portland Timbers', 34, 34, 2848, 9, 4, 62),
+('Lee Nguyen', 'New England Revolution', 33, 32, 2838, 4, 7, 56);
+INSERT INTO stats (player, team, games_played, games_started, min, goals, assists, shots) VALUES
+('Drew Moor', 'Colorado Rapids', 34, 34, 3060, 3, 2, 17),
+('Jimmy Nielsen', 'Sporting Kansas City', 34, 34, 3060, 0, 0, 0),
+('Eddie Gaven', 'Columbus Crew', 34, 34, 2990, 9, 2, 55),
+('Lee Young-Pyo', 'Vancouver Whitecaps', 33, 33, 2970, 1, 4, 7),
+('Justin Morrow', 'San Jose Earthquakes', 33, 33, 2970, 1, 4, 6),
+('Brandon McDonald', 'D.C. United', 33, 33, 2963, 2, 4, 18),
+('Steven Beitashour', 'San Jose Earthquakes', 33, 33, 2955, 0, 6, 11),
+('Tally Hall', 'Houston Dynamo', 33, 33, 2946, 0, 0, 0),
+('Sean Franklin', 'LA Galaxy', 34, 33, 2937, 0, 5, 17),
+('Bobby Boswell', 'Houston Dynamo', 33, 33, 2930, 2, 1, 20),
+('Carlos Valdés', 'Philadelphia Union', 33, 33, 2923, 2, 0, 24),
+('Andy Gruenebaum', 'Columbus Crew', 33, 33, 2920, 0, 1, 0),
+('Dax McCarty', 'New York Red Bulls', 33, 33, 2918, 3, 3, 40),
+('Brian Carroll', 'Philadelphia Union', 33, 32, 2898, 1, 1, 20),
+('Sebastián Miranda', 'Columbus Crew', 33, 33, 2882, 1, 1, 6),
+('Dan Kennedy', 'Chivas USA', 32, 32, 2880, 0, 0, 0),
+('Zac MacMath', 'Philadelphia Union', 32, 32, 2880, 0, 0, 0),
+('James Riley', 'Chivas USA', 32, 32, 2880, 0, 2, 10),
+('Kei Kamara', 'Sporting Kansas City', 33, 32, 2871, 11, 8, 134),
+('Matt Pickens', 'Colorado Rapids', 32, 32, 2859, 0, 0, 0),
+('Tony Beltran', 'Real Salt Lake', 32, 32, 2857, 0, 2, 12),
+('Jon Busch', 'San Jose Earthquakes', 32, 32, 2835, 0, 0, 0),
+('Chris Wondolowski', 'San Jose Earthquakes', 32, 31, 2813, 27, 7, 127),
+('Perry Kitchen', 'D.C. United', 32, 32, 2804, 0, 1, 12),
+('Michael Farfan', 'Philadelphia Union', 32, 31, 2802, 1, 5, 54);
+INSERT INTO stats (player, team, games_played, games_started, min, goals, assists, shots) VALUES
+('Tally Hall', 'Houston Dynamo', 34, 34, 3060, 0, 1, 0),
+('Sébastien Le Toux', 'Philadelphia Union', 34, 34, 3060, 11, 9, 81),
+('Matt Pickens', 'Colorado Rapids', 34, 34, 3060, 0, 0, 0),
+('Kasey Keller', 'Seattle Sounders', 34, 34, 3060, 0, 0, 0),
+('Jeff Larentowicz', 'Colorado Rapids', 34, 34, 3051, 7, 1, 37),
+('Joel Lindpere', 'New York Red Bulls', 34, 34, 3048, 7, 7, 54),
+('Sebastián Miranda', 'Columbus Crew', 34, 34, 3044, 0, 3, 8),
+('Kosuke Kimura', 'Colorado Rapids', 34, 34, 2996, 1, 1, 13),
+('Nick Rimando', 'Real Salt Lake', 33, 33, 2970, 0, 0, 0),
+('Geoff Cameron', 'Houston Dynamo', 33, 33, 2970, 5, 5, 63),
+('Dan Califf', 'Philadelphia Union', 33, 33, 2970, 1, 0, 9),
+('Jon Busch', 'San Jose Earthquakes', 33, 33, 2970, 0, 0, 0),
+('Kevin Hartman', 'FC Dallas', 33, 33, 2970, 0, 1, 0),
+('Kevin Alston', 'New England Revolution', 33, 33, 2954, 0, 1, 14),
+('Gonzalo Segares', 'Chicago Fire', 33, 33, 2950, 3, 5, 17),
+('Brad Davis', 'Houston Dynamo', 34, 34, 2892, 4, 16, 49),
+('Osvaldo Alonso', 'Seattle Sounders', 33, 32, 2891, 3, 3, 54),
+('Carlos Valdés', 'Philadelphia Union', 32, 32, 2880, 1, 1, 22),
+('Matt Besler', 'Sporting Kansas City', 32, 32, 2880, 2, 2, 10),
+('Drew Moor', 'Colorado Rapids', 32, 32, 2880, 4, 1, 28),
+('Will Hesmer', 'Columbus Crew', 32, 32, 2880, 0, 0, 0),
+('Dan Kennedy', 'Chivas USA', 32, 32, 2880, 0, 0, 0),
+('Todd Dunivant', 'LA Galaxy', 32, 32, 2880, 0, 4, 12),
+('Shalrie Joseph', 'New England Revolution', 32, 32, 2860, 8, 1, 52),
+('Chad Marshall', 'Columbus Crew', 32, 32, 2835, 0, 1, 15);
+INSERT INTO stats (player, team, games_played, games_started, min, goals, assists, shots) VALUES
+('Will Hesmer', 'Columbus Crew', 30, 30, 2700, 1, 0, 1),
+('Tim Ream', 'New York Red Bulls', 30, 30, 2700, 1, 0, 7),
+('Drew Moor', 'Colorado Rapids', 30, 30, 2700, 1, 0, 14),
+('David Ferreira', 'FC Dallas', 30, 30, 2699, 8, 13, 54),
+('Nat Borchers', 'Real Salt Lake', 30, 30, 2673, 2, 0, 10),
+('Kasey Keller', 'Seattle Sounders', 30, 30, 2655, 0, 1, 0),
+('Jordan Harvey', 'Philadelphia Union', 30, 29, 2620, 1, 1, 9),
+('Jeff Larentowicz', 'Colorado Rapids', 30, 29, 2617, 4, 1, 41),
+('Jimmy Nielsen', 'Sporting Kansas City', 29, 29, 2610, 0, 0, 0),
+('Donovan Ricketts', 'LA Galaxy', 29, 29, 2610, 0, 0, 0),
+('Matt Pickens', 'Colorado Rapids', 29, 29, 2610, 0, 0, 1),
+('Juan Pablo Ángel', 'New York Red Bulls', 30, 29, 2593, 13, 4, 98),
+('Joel Lindpere', 'New York Red Bulls', 29, 29, 2567, 3, 6, 32),
+('Michael Orozco Fiscal', 'Philadelphia Union', 29, 29, 2562, 2, 0, 14),
+('Michael Harrington', 'Sporting Kansas City', 29, 29, 2560, 0, 4, 3),
+('Guillermo Barros Schelotto', 'Columbus Crew', 29, 29, 2545, 9, 8, 62),
+('Sébastien Le Toux', 'Philadelphia Union', 28, 28, 2520, 14, 11, 90),
+('Omar Gonzalez', 'LA Galaxy', 28, 28, 2520, 2, 0, 13),
+('Stefan Frei', 'Toronto FC', 28, 28, 2520, 0, 0, 0),
+('Mariano Trujillo', 'Chivas USA', 28, 28, 2517, 0, 3, 5),
+('Pablo Mastroeni', 'Colorado Rapids', 29, 29, 2493, 2, 3, 16),
+('Michael Umaña', 'Chivas USA', 28, 28, 2483, 0, 0, 2),
+('Atiba Harris', 'FC Dallas', 29, 28, 2473, 4, 2, 53),
+('Bobby Convey', 'San Jose Earthquakes', 28, 28, 2472, 1, 10, 18),
+('Omar Cummings', 'Colorado Rapids', 29, 28, 2471, 14, 3, 76);
 
 
 #STANDINGS
